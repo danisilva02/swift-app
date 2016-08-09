@@ -1,0 +1,1162 @@
+
+@font-face {
+  font-family: 'AkzidenzGroteskBQ-Cnd';
+  src: url('../fonts/AkzidenzGroteskBQ-Cnd.eot?#iefix') format('embedded-opentype'),  url('../fonts/AkzidenzGroteskBQ-Cnd.otf')  format('opentype'),
+	     url('../fonts/AkzidenzGroteskBQ-Cnd.woff') format('woff'), url('../fonts/AkzidenzGroteskBQ-Cnd.ttf')  format('truetype'), url('../fonts/AkzidenzGroteskBQ-Cnd.svg#AkzidenzGroteskBQ-Cnd') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'AkzidenzGroteskBQ-Reg';
+  src: url('../fonts/AkzidenzGroteskBQ-Reg.eot?#iefix') format('embedded-opentype'),  url('../fonts/AkzidenzGroteskBQ-Reg.otf')  format('opentype'),
+	     url('../fonts/AkzidenzGroteskBQ-Reg.woff') format('woff'), url('../fonts/AkzidenzGroteskBQ-Reg.ttf')  format('truetype'), url('../fonts/AkzidenzGroteskBQ-Reg.svg#AkzidenzGroteskBQ-Reg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AkzidenzGroteskBQ-CndIt';
+  src: url('../fonts/AkzidenzGroteskBQ-CndIt.eot?#iefix') format('embedded-opentype'),  url('../fonts/AkzidenzGroteskBQ-CndIt.otf')  format('opentype'),
+	     url('../fonts/AkzidenzGroteskBQ-CndIt.woff') format('woff'), url('../fonts/AkzidenzGroteskBQ-CndIt.ttf')  format('truetype'), url('../fonts/AkzidenzGroteskBQ-CndIt.svg#AkzidenzGroteskBQ-CndIt') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Times-Italic';
+  src: url('../fonts/Times-Italic.eot?#iefix') format('embedded-opentype'),  url('../fonts/Times-Italic.woff') format('woff'), url('../fonts/Times-Italic.ttf')  format('truetype'), url('../fonts/Times-Italic.svg#Times-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AkzidenzGroteskBE-LightCn';
+  src: url('../fonts/AkzidenzGroteskBE-LightCn.eot?#iefix') format('embedded-opentype'),  url('../fonts/AkzidenzGroteskBE-LightCn.otf')  format('opentype'),
+	     url('../fonts/AkzidenzGroteskBE-LightCn.woff') format('woff'), url('../fonts/AkzidenzGroteskBE-LightCn.ttf')  format('truetype'), url('../fonts/AkzidenzGroteskBE-LightCn.svg#AkzidenzGroteskBE-LightCn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.topoMenu{
+
+    position: absolute;
+    left: 295px;
+    top: 125.5px;
+}
+
+[type="checkbox"] + label:before{
+
+
+    position: absolute !important;
+    cursor: pointer !important;
+    top: -100% !important;
+    left: -100% !important;
+}
+
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
+    box-shadow: none !important;
+}
+
+#menu{
+
+    z-index: -9999 !important;
+    width: 128.7px !important;
+    position: absolute;
+    top: 40px;
+    left: 4px;
+    z-index: 1;
+    background-color: #FFB817;
+    -webkit-transition: all 500ms ease;
+    opacity: 0;
+    transition: all 500ms ease;
+}
+#togle+label{
+
+ background-image: url(../images/blog_submenu2.png);
+ width: 140px;
+ height: 43px;
+ -ms-transform: rotate(7deg);
+ -webkit-transform: rotate(7deg);
+ transform: rotate(0deg);
+
+}
+#togle:checked~#menu{
+
+top: 39px;
+opacity: 1;
+z-index: 9999 !important;
+
+
+}
+
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 64px;
+    line-height: 40px !important;
+}
+
+#menu ul{
+
+background-color: #FFB817 !important;
+width: 44px;
+text-align: center;
+
+}
+
+#menu ul li{
+    
+    width: 129.4px;
+    float: left;
+    display: inline-block;
+    background-color: #FFB817 !important;
+    border-bottom: 1px solid #ffc75b;
+}
+
+
+#menu ul a li:nth-child(6){
+    
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+nav ul a{
+    font-size: 1rem;
+    color: #fff;
+    display: block;
+    padding: 0 0px !important;
+}
+
+
+
+.center{
+            text-align: center;
+        }
+.left{
+        text-align: left;
+}
+        .topo{
+            position: relative;
+            width: 100% !important;
+            height: 180px;
+            background-image: url(../images/bg_topo2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .divreceitas{
+            position: relative;
+            margin-top: 90px;
+        }
+        #logo_topo{
+            position: absolute;
+            left: 0;
+            top: 59px;
+        }
+        #cel_topo{
+            position: absolute;
+    right: 208px;
+    top: 83px;
+        }
+        .receitas1{
+            width: 40% !important;
+            margin-left: 10% !important;
+        }
+        .txt_receita1{
+            width: 100%;
+            position: relative;
+            top: 0px;
+            text-align: left;
+            /* margin-left: 17%; */
+            color: #930203;
+            font-size: 2.5em;
+            line-height: 4px;
+        }
+        #img_topo_receita{
+            
+            position: absolute;
+            left: 162px;
+            top: -15px;
+        }
+        .txt_receita1 p:nth-child(1){font-family: 'AkzidenzGroteskBQ-Cnd';text-transform: uppercase;width: 66%;}
+        .txt_receita1 p:nth-child(2){font-family: 'AkzidenzGroteskBQ-Cnd';text-transform: uppercase;width: 86%;}
+        .txt_receita1 p:nth-child(3){
+            font-family: 'Times-Italic';
+            font-size:  16px !important;
+            width: 85%;
+        }
+        .banner{
+            
+            margin: 0 auto;
+            position: relative;
+            margin-top: 100px;
+        
+        }
+        .slideimg01{width: 283px !important;}
+        .slideimg02{position: relative;
+    left: -14px !important;}
+        .slideimg03{width: 275px !important;}
+        
+        .banner p{
+        
+            color: #ef4e29;
+            font-size: 2em;
+            display: inline-block;
+            position: relative;
+            left: 28px;
+            float: left;
+                    text-transform: uppercase;
+            font-family: 'AkzidenzGroteskBQ-Cnd';
+        
+        }
+        .banner h6{
+            color: #ef4e29;
+    position: relative;
+    top: -57px;
+    left: -80px;
+    text-transform: uppercase;
+    font-family: 'AkzidenzGroteskBQ-Cnd';
+    font-size: 19px;
+            font-size: 19px;
+            display: inline;
+        }
+        .banner span{
+        
+            color: #ef4e29;
+            font-size: 1em;
+            font-weight: 800;
+            font-family: 'AkzidenzGroteskBE-LightCn';
+        }
+       .caroseul{
+           
+        max-width: 1014px;
+           margin: 0 auto;
+        
+       }
+.caroseul img{
+           
+        width: 100%;
+        
+       }
+        .banner_slide img{
+            
+        width: 100%;
+        
+        }
+        .txt_postagens_home{
+        
+            color: #ef4e29 !important;
+            font-size: 2em !important;
+            display: inline-block !important;
+            position: relative !important;
+            background-color: none !important;
+            left: -50px;
+            text-transform: uppercase;
+            font-family: 'AkzidenzGroteskBQ-Cnd';
+        }
+        .span_postagens_home{
+            color: #ef4e29 !important;
+            font-size: 1em !important;
+            font-weight: 800 !important;
+            background-color: none !important;
+            text-transform: uppercase;
+            font-family: 'AkzidenzGroteskBQ-Cnd';
+        }
+        .postagens_home{
+            
+            margin:  0 auto;
+            margin-top: 0px;
+        }
+        .postagens_home img{
+            position: relative;
+            display: inline;
+            margin-left: 0px;
+            float: left !important;
+
+        }
+        .postagens_home p {
+            line-height: 20px;
+            text-align: left;
+        }
+        .comentario p:nth-child(1){
+            color: white;
+            background-color: #fbb631;
+            
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 10px;
+            width: auto;
+            display: table;
+            margin: 10px;
+            text-transform: uppercase;
+            font-family: 'AkzidenzGroteskBQ-Cnd';
+            
+        }
+        .postagens_home p:nth-child(2) {
+            color: #ef4e29;
+            font-size: 1.7em;
+            margin: 10px;
+            text-transform: uppercase;
+            font-family: 'AkzidenzGroteskBQ-Cnd';
+        }
+        .postagens_home p:nth-child(3) {
+            color: #9b2728;
+            margin: 10px;
+            font-size: 17px;
+            font-family: 'Times-Italic';
+            
+        }
+        .postagens_home p:nth-child(4) {
+            color: #8c8c8c;
+            margin: 10px;
+            max-width: 658px;
+            
+            font-family: 'AkzidenzGroteskBQ-Reg';
+        }
+        .footer{
+            max-width:1014px;
+            height: 300px;
+            margin: 0 auto;
+            margin-top: 90px;
+            background-image: url(../images/rodape.png);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: auto;
+            position: relative;
+        }
+        .cel_footer{
+            position: absolute;
+            left: calc(50% - 30px);
+            top: -25px;
+            -ms-transform: rotate(-16deg); /* IE 9 */
+            -webkit-transform: rotate(-16deg); /* Chrome, Safari, Opera */
+             transform: rotate(-16deg);
+             width: 9%;
+
+        -webkit-animation-name: example; /* Chrome, Safari, Opera */
+        -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+        animation-name: example;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;    
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%{
+  
+        transform: rotate(0deg);
+    
+    }
+    25% {
+        
+        transform: rotate(-16deg);
+        
+    
+    }
+    to {
+       
+        transform: rotate(0);
+    }
+}
+        .logo_footer{
+            position: absolute;
+            top: 85px;
+        }
+        .txt_footer{
+            position: absolute;
+            top: 85px;
+            left: 175px;
+        }
+        .txt_footer p{
+            color: #6a6a6a;
+            line-height: 5px;
+            font-family: 'AkzidenzGroteskBQ-Cnd';
+            text-transform: uppercase;
+            font-size: 22px;
+        }
+
+
+        .txt_footer p:nth-child(4){
+            font-size: 8px;
+            font-family: sans-serif !important;
+        }
+        .google_play{
+            width: 9%;
+            position: absolute;
+            top: 14px;
+            right: 125px;
+        }
+        .itunes{
+            width: 9%;
+            position: absolute;
+            top: 14px;
+            right: 20px;
+        }
+        .conteudo_topo{
+            width: 1014px;
+            height: 180px;
+            position: relative;
+            margin: 0 auto;
+        }
+        .conteudo_topo p:nth-child(1) {
+            
+    position: absolute;
+    top: 192px;
+    left: 520px;
+    color: #d8321b !important;
+    font-size: 24px !important;
+    font-weight: 900 !important;
+    line-height: 0px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-family: 'AkzidenzGroteskBE-LightCn';
+}
+.conteudo_topo p:nth-child(2) {
+            
+    position: absolute;
+    top: 217px;
+    left: 376px;
+    font-size: 24px !important;
+    font-weight: 900 !important;
+    line-height: 0px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.conteudo_topo span {
+    font-weight: 100 !important;
+    color:#d8321b !important;
+    
+}
+    .bx-viewport{
+        height: 508px !important;
+    }
+
+.txt_postmais{
+    
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+}
+.txt_postmais p{
+    
+    text-align: justify;
+    color: #8c8c8c;
+    /* margin: 10px; */
+    /* max-width: 658px; */
+    font-family: 'AkzidenzGroteskBQ-Reg';
+}
+.maispostleft p{
+
+    text-align: left;
+    line-height: 2px;
+    margin-top: 2px;
+    font-size: 12px;
+    font-weight: bolder;
+    color: #555555;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.posrelative{
+    position: relative;
+    
+}
+.imgMaisPost{
+    
+position: absolute;
+left: 14px;
+top: -70px;
+    
+}
+
+.img_borda_home{
+    position: relative!important;
+    left: calc(50% - 400px);
+    max-width: 800px;
+    float: none !important;
+}
+.video img{
+    float: left;
+    max-width: 628px;
+    width: 99%;
+    left: 0px !important;
+
+}
+.max{
+
+   
+    margin-left: 0px;
+
+}
+
+.videomax{
+    
+    position: relative;
+    left: 0px;
+}
+.rss{
+    position: absolute;
+    top: 181px;
+    right: 0px;
+    width: 175px;
+    height: 65px;
+
+}
+.rss img{
+    position: absolute;
+    top: 17px;
+    right: -5px;
+}
+.rss h5{
+    
+    line-height: 8px;
+    
+    
+}
+.rss h5:nth-child(3){font-family: 'AkzidenzGroteskBQ-Cnd';font-size: 24px;color: #d8321b;position: absolute;
+    top: 32px;
+    left: 64px;
+    display: inline;}
+.rss h5:nth-child(2){font-family: 'AkzidenzGroteskBE-LightCn';font-size: 27px;color: #d8321b;display: inline;
+    position: absolute;
+    top: 10px;
+    left: 29px;}
+
+.rede_social{
+    text-align: left;
+    margin-top: 30px;
+}
+.txt_receitas_topo{
+    width: 76%;
+    margin: 0 auto;
+}
+.max-img{
+
+    max-width: 647px;
+    width: 100%;
+    float: left;
+
+}
+
+.txt_responsivo_footer{
+
+    display: none;
+}
+
+.btn_footer_g{
+    display: none;
+}
+.btn_footer_i{
+    display: none;
+}
+.img_ultima_post{
+    float: none !important;
+    position: relative !important;
+    /* left: -50px !important; */
+}
+/*=================MEDIA QUERIE=============================*/
+
+@media screen and (min-width: 500px) and (max-width: 991px){
+
+.video img{
+    float: none;
+}
+ .img_borda_home {
+    position: relative!important;
+     left: calc(50% - 345px);
+    max-width: 800px;
+    float: none !important;
+    width: 100%;
+}   
+.row .col.m12 {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 40px;
+}
+.max-img {
+    max-width: 647px;
+    width: 100%;
+    float: none;
+}
+.txt_postmais {
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+}
+.imgMaisPost {
+    /* position: relative !important; */
+    left: calc(50% - 70px);
+    top: -70px;
+    margin-bottom: 20px;
+}
+    
+.txt_receitas_topo {
+    width: 80% !important;
+    margin: 0 auto;
+}
+    
+#img_topo_receita {
+    position: absolute !important;
+    left: 92px !important;
+    top: -15px !important;
+}
+    
+.txt_postagens_home {
+    color: #ef4e29 !important;
+    font-size: 2em !important;
+    display: inline-block !important;
+    position: relative !important;
+    background-color: none !important;
+    left: 0px;
+    text-transform: uppercase;
+    font-family: 'AkzidenzGroteskBQ-Cnd';
+}
+    
+.maispostleft p {
+    text-align: center !important; 
+    margin-left: 10px;
+    line-height: 2px;
+    margin-top: 2px;
+    font-size: 12px;
+    font-weight: bolder;
+    color: #555555;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+    
+
+
+}
+@media (min-width: 1600px) and (max-width: 1920px){
+
+    .video img 
+
+    {
+    float: left !important;
+    max-width: 628px;
+    width: 99%;
+    left: 0px;
+}
+
+    .max-img {
+    max-width: 647px;
+    width: 100%;
+    float: none;
+}
+.txt_postmais {
+    max-width: 640px;
+    margin: 0 auto;
+    float: none;
+}
+
+}
+@media (min-width: 1680px) and (max-width: 1920px){
+
+    .left_left{
+    position: relative;
+    left: -100px;
+}
+
+.max-img {
+    max-width: 647px;
+    width: 100%;
+    float: none;
+}
+.txt_postmais {
+    max-width: 640px;
+    margin: 0 auto;
+    float: none;
+}
+}
+@media (max-width: 1280px){
+
+.video img {
+    float: left;
+    max-width: 628px;
+    width: 100%;
+    position: relative;
+    
+} 
+    
+}
+@media (min-width: 994px) and (max-width: 1024px){
+
+    .maispostleft p {
+    text-align: left;
+    line-height: 2px;
+    margin-top: 2px;
+    font-size: 12px;
+    font-weight: bolder;
+    color: #555555;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    position: relative !important;
+    width: 300px !important;
+}
+    
+.video img {
+    float: left;
+    max-width: 628px;
+    width: 100%;
+    position: relative;
+    left: -30px;
+}    
+.postagens_home img{
+            position: relative;
+            display: inline;
+            margin-left: 0px;
+            float: left !important;
+            width: 100%;
+        }
+.rss {
+    position: absolute;
+    top: 181px;
+    right: 25px;
+    width: 175px;
+    height: 65px;
+}
+    
+#logo_topo {
+    position: absolute;
+    left: 40px;
+    top: 100px;
+}
+    
+}
+@media (max-width: 1440px){
+
+.txt_receitas_topo {
+    width: 100%;
+    margin: 0 auto;
+}
+    
+#img_topo_receita {
+    position: absolute;
+    left: 8px;
+    top: -15px;
+}
+
+
+}
+@media (max-width: 991px){
+
+.conteudo_topo {
+    max-width: 991px;
+    width: 100%;
+    height: 222px;
+    position: relative;
+    margin: 0 auto;
+}
+
+    #logo_topo {
+    position: absolute;
+    left: 80px;
+    top: 119px;
+    width: 150px;
+}
+    
+#cel_topo {
+    position: absolute;
+    left: 74%;
+    top: 77px;
+}
+    .rss {
+    position: absolute;
+    top: 230px;
+    right: 27px;
+    width: 175px;
+    height: 65px;
+}
+    
+.conteudo_topo p:nth-child(1) {
+    position: absolute;
+    top: 192px;
+    left: 460px;
+    color: #d8321b !important;
+    font-size: 24px !important;
+    font-weight: 900 !important;
+    line-height: 0px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-family: 'AkzidenzGroteskBE-LightCn';
+}
+    
+.conteudo_topo p:nth-child(2) {
+    position: absolute;
+    top: 217px;
+    left: 312px;
+    font-size: 24px !important;
+    font-weight: 900 !important;
+    line-height: 0px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+    .banner h6 {
+    color: #ef4e29;
+    position: relative;
+    top: -54px;
+    left: -83px;
+    text-transform: uppercase;
+    font-family: 'AkzidenzGroteskBQ-Cnd';
+    font-size: 19px;
+    font-size: 19px;
+    display: inline;
+}
+.left{
+    text-align: center;
+}
+
+.footer {
+    max-width: 992px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 90px;
+    background-image: url(../images/rodape.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 98%;
+    position: relative;
+}
+    
+   
+    .caroseul{
+           
+        max-height: 100%;
+        
+       }
+    .caroseul p {
+        position: absolute;
+        top: 0;
+    }
+    .postagens_home img{
+            position: relative;
+            display: inline;
+            margin-left: 0px;
+        float: none;
+            
+        }
+    .postagens_home{
+    
+        text-align: center;
+    }
+    .comentario p{
+        text-align: justify;
+    }
+    .postagens_home p:nth-child(4){
+        max-width: none;
+    }
+
+}
+
+@media (max-width: 767px){
+
+    
+.img_borda_home {
+    position: relative!important;
+    /* left: calc(50% - 400px); */
+    max-width: 800px;
+    float: none !important;
+    width: 100%;
+}    
+.conteudo_topo {
+    max-width: 767px;
+    height: 222px;
+    position: relative;
+    margin: 0 auto;
+}
+    
+.footer {
+    
+    max-width: 767px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 90px;
+    background-image: url(../images/rodape.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size:100%;
+    position: relative;
+}
+    .postagens_home img{
+            position: relative;
+            display: inline;
+            margin-left: 0px;
+        }
+
+}
+
+@media (max-width: 768px){
+
+    #cel_topo {
+    position: absolute;
+    left: 80%;
+    top: 77px;
+}
+   
+#img_topo_receita {
+    position: absolute;
+    left: 13px !important;
+    top: -15px;
+}
+.txt_receitas_topo {
+    width: 99% !Important;
+    margin: 0 auto;
+}
+    
+.google_play {
+    width: 9%;
+    position: absolute;
+    top: 14px;
+    right: 105px;
+}
+    
+.conteudo_topo p:nth-child(1) {
+    position: absolute;
+    top: 192px;
+    left: 440px;
+    color: #d8321b !important;
+    font-size: 24px !important;
+    font-weight: 900 !important;
+    line-height: 0px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-family: 'AkzidenzGroteskBE-LightCn';
+}
+    
+.conteudo_topo p:nth-child(2) {
+    position: absolute;
+    top: 217px;
+    left: 294px;
+    font-size: 24px !important;
+    font-weight: 900 !important;
+    line-height: 0px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+    
+.rss {
+    display: none;
+}
+    
+.cel_footer {
+    
+    display: none !important;
+}
+.logo_footer {
+    display: none !important;
+
+}
+.txt_footer {
+    display: none !important;
+}
+.footer {
+    background-color: #e94c28;
+    background-image: none;
+    height: 200px;
+}
+.google_play {
+    display: none !important;
+}
+.itunes {
+    display: none;
+}
+ .txt_responsivo_footer{
+ 
+    width: 100%;    
+    color: #fff;
+    font-size: 32px;
+    font-family: 'AkzidenzGroteskBE-LightCn';
+    text-align: center;
+    position: relative;
+    top: 30px;
+    display: block;
+ }  
+.btn_footer_g{
+    display: block;
+    width: 40%;
+    float: left;
+    margin-left: 22px;
+    margin-top: 15px;
+}
+.btn_footer_i{
+    display: block;
+    width: 40%;
+    float: left;
+    margin-left: 35px;
+    margin-top: 10px;
+}    
+}
+@media (max-width: 478px){
+
+    .slide{
+        
+    float: left !important;
+    list-style: none !important;
+    position: relative !important;
+    width: 306px !important;
+    margin-right: 10px !important;
+    
+    }
+}
+@media (max-width: 414px){
+    .banner h6 {
+    color: #ef4e29;
+    position: relative;
+    top: -28px;
+    left: 0px;
+    text-transform: uppercase;
+    font-family: 'AkzidenzGroteskBQ-Cnd';
+    font-size: 19px;
+    font-size: 19px;
+    display: inline;
+}
+    
+.bx-viewport {
+    height: 499px !important;
+}
+    
+.videomax {
+    position: relative;
+    left: 0px; 
+}    
+}
+@media (max-width: 375px){
+    .banner h6 {
+    color: #ef4e29;
+    position: relative;
+    top: -28px;
+    left: 0px;
+    text-transform: uppercase;
+    font-family: 'AkzidenzGroteskBQ-Cnd';
+    font-size: 19px;
+    font-size: 19px;
+    display: inline;
+}
+    
+.bx-viewport {
+    height: 499px !important;
+}
+    
+.videomax {
+    position: relative;
+    left: 0px; 
+}    
+}
+@media (max-width: 320px){
+    .banner h6 {
+    color: #ef4e29;
+    position: relative;
+    top: -28px;
+    left: 0px;
+    text-transform: uppercase;
+    font-family: 'AkzidenzGroteskBQ-Cnd';
+    font-size: 19px;
+    font-size: 19px;
+    display: inline;
+}
+    
+.bx-viewport {
+    height: 499px !important;
+}
+    
+.videomax {
+    position: relative;
+    left: 0px; 
+}    
+}
+@media (min-width: 320px) and (max-width: 680px){
+
+.conteudo_topo p:nth-child(1) {
+    display: none !important;
+}
+.conteudo_topo p:nth-child(2) {
+   display: none !important;
+}
+
+
+}
+
+@media (max-width: 469px){
+    
+    .txt_responsivo_footer{
+ 
+    width: 100%;    
+    color: #fff;
+    font-size: 26px;
+    font-family: 'AkzidenzGroteskBE-LightCn';
+    text-align: center;
+    position: relative;
+    top: 30px;
+    display: block;
+ }  
+    
+.maispostleft p {
+    text-align: center !important;
+    line-height: 2px;
+    margin-top: 2px;
+    font-size: 12px;
+    font-weight: bolder;
+    color: #555555;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}  
+    
+.txt_receita1 p:nth-child(2) {
+    font-family: 'AkzidenzGroteskBQ-Cnd';
+    text-transform: uppercase;
+    width: 100%;
+}
+    
+.txt_receita1 p:nth-child(3) {
+    font-family: 'Times-Italic';
+    font-size: 16px !important;
+    width: 100%;
+}  
+    
+.btn_footer_g{
+    display: block;
+    width: 40%;
+    float: left;
+    margin-left: 22px;
+    margin-top: 15px;
+}
+.btn_footer_i{
+    display: block;
+    width: 40%;
+    float: left;
+    margin-left: 35px;
+    margin-top: 10px;
+} 
+    
+#cel_topo {
+    display: none;
+}
+    
+.topo{
+            position: relative;
+            width: 100% !important;
+            height: 180px;
+            background-image: url(../images/bg_topo.jpg);
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size:330% 90%;
+        } 
+    
+#logo_topo {
+    position: absolute;
+    left: 9px;
+    top: 119px;
+    width: 150px;
+}
+    
+.imgMaisPost {
+    position: relative;
+    left: 0;
+    top: -20px;
+}    
+
+}

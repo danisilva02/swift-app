@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>swift-Blog</title>
+    
+  <link rel="stylesheet" href="{% static 'css/materialize.css' %}">
+  <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+  <!-- jQuery library (served from Google) -->
+    <script src="{% static 'js/jquery-1.11.3.js' %}"></script>
+<!-- bxSlider Javascript file -->
+<script src="{% static 'js/jquery.bxslider.min.js' %}"></script>
+<!-- bxSlider CSS file -->
+<link href="{% static 'js/jquery.bxslider.css' %}" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+    <body>
+        
+        <div class="topo">
+            <div class="conteudo_topo">
+            <img id="logo_topo" src="{% static 'images/logo.png' %}">
+            <img id="cel_topo" src="{% static 'images/cel_topo.png' %}">
+
+            <div class="topoMenu">
+                <input type="checkbox" name="togle"  id="togle"/>
+                <label id="togleMenu" for="togle"></label>
+            
+            
+            <nav id="menu">
+                <ul>
+                      {% for categori in Categories %}
+                      <li><a href="/blog/category/{{categori.id}}">{{categori.name}}</a></li>
+                      {% endfor %}
+                </ul>
+            </nav>
+            </div>
+
+
+            <div>    
+            <p class="txt_postagens_home">Novo Aplicativo SWIFT.</p>
+            <p class="txt_postagens_home">Pensou, tá feito!</p>
+            </div>
+                
+                <div class="rss">
+                <img src="{% static 'images/rss.png' %}">
+                    <h5>Receba nossas</h5>
+                    <h5>novidades</h5>
+                </div>    
+                
+            </div>    
+        </div>
+        <div class="container" >
+        
+           <div class="col s12 center banner">
+               
+                 
+               
+               
+               <div class="caroseul">
+                   
+                   <p><span>Novo aplicativo Swift.</span> Pensou, tá feito!<p>
+                    
+                      <ul class="bxslider">
+                      {% for b in banner %}
+                      <li><div class="slide"><img class="slideimg01" src="{{b.image.url}}"></div></li>
+                      {%endfor%}
+                      </ul>
+
+                    <h6>OUTRAS FUNÇÕES</h6>  
+                   
+               </div>
+                  
+           </div>
+        
+        </div>
+        
+        
+        <div class="container">
+        
+           
+        </div>
+        <div class="container postagens_home">
+            
+             <div class="row">
+            
+                <div class="row">
+                    <div class="col s12 m5 l6 center">
+                    <img class="img_ultima_post" src="{% static 'images/ultimas_postagemHome.jpg' %}">
+                    </div>    
+               </div>
+        
+            </div>
+            {% for item in post%}
+            <a href="/blog/detalhe/{{item.id}}"><div class="row txt1">
+              
+            <div class="col s12 m5 l4 "><img src="{% static 'images/img01.jpg' %}"></div>
+            <div class="col s12 m5 l8 ">
+            <div class="comentario">
+                <p class="txt1titulo">{{item.category}}</p>
+                {{item.content}}
+            </div> 
+               
+            </div>
+            <img class="img_borda_home" src="{% static 'images/dividirHOME.jpg' %}">
+            </div></a>
+            {% endfor %}
+           <!-- <div class="row txt1">
+              
+            <div class="col s12 m5 l4 "><img src="images/img02.jpg"></div>
+            <div class="col s12 m5 l8 ">
+                <div class="comentario">
+                    <p>Churrascômetro</p>
+                    <p>O melhor churrasco, tá feito!</p>
+                    <p>Updated by Nome on November 18, 2015, 0:00 a.m</p>
+                    <p>A qualidade da carne nós garantimos. Então preparamos um churrascômetro que indica os melhores cortes para diversas ocasiões. É fácil, você escolhe a ocasião, informa o número de convidados e pronto.</p>
+                    </div>
+                
+            </div>
+              <img class="img_borda_home" src="images/dividirHOME.jpg">
+            </div>
+            <div class="row txt1">
+              
+            <div class="col s12 m5 l4 "><img src="images/img03.jpg"></div>
+            <div class="col s12 m5 l8 ">
+            <div class="comentario">
+                <p>Receitas</p>
+                <p>TIBONE SWIFT MAIS AO MOLHO BARBECUE</p>
+                <p>Updated by Nome on November 18, 2015, 0:00 a.m.</p>
+                <p>Lorem Ipsum nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>    
+            </div>  
+                
+            </div>
+             <img class="img_borda_home" src="images/dividirHOME.jpg"> 
+            </div>
+            
+            <div class="row txt1">
+              
+            <div class="col s12 m5 l4 "><img src="images/img03.jpg"></div>
+            <div class="col s12 m5 l8 ">
+            <div class="comentario">
+                <p>Receitas</p>
+                <p>TIBONE SWIFT MAIS AO MOLHO BARBECUE</p>
+                <p>Updated by Nome on November 18, 2015, 0:00 a.m.</p>
+                <p>Lorem Ipsum nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>    
+            </div> 
+             
+            </div>
+            <img class="img_borda_home" src="images/dividirHOME.jpg">     
+            </div>
+            
+            <div class="row txt1">
+              
+            <div class="col s12 m5 l4 "><img src="images/img03.jpg"></div>
+            <div class="col s12 m5 l8 ">
+            <div class="comentario">
+                <p>Receitas</p>
+                <p>TIBONE SWIFT MAIS AO MOLHO BARBECUE</p>
+                <p>Updated by Nome on November 18, 2015, 0:00 a.m.</p>
+                <p>Lorem Ipsum nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>    
+            </div>
+               
+            </div>
+             <img class="img_borda_home" src="images/dividirHOME.jpg">  
+            </div>
+            
+            <div class="row txt1">
+              
+            <div class="col s12 m5 l4 "><img src="images/img03.jpg"></div>
+            <div class="col s12 m5 l8 ">
+            <div class="comentario">
+                <p>Receitas</p>
+                <p>TIBONE SWIFT MAIS AO MOLHO BARBECUE</p>
+                <p>Updated by Nome on November 18, 2015, 0:00 a.m.</p>
+                <p>Lorem Ipsum nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>    
+            </div>
+               
+            </div>
+            <img class="img_borda_home" src="images/dividirHOME.jpg">   
+            </div>
+            
+            <div class="row txt1">
+              
+            <div class="col s12 m5 l4 "><img src="images/img03.jpg"></div>
+            <div class="col s12 m5 l8 ">
+            <div class="comentario">
+                <p>Receitas</p>
+                <p>TIBONE SWIFT MAIS AO MOLHO BARBECUE</p>
+                <p>Updated by Nome on November 18, 2015, 0:00 a.m.</p>
+                <p>Lorem Ipsum nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>    
+            </div>
+                
+            </div>
+            
+            <img class="img_borda_home" src="images/dividirHOME.jpg">  
+            
+            </div>-->
+          
+            
+        </div>
+        
+        <div class="section">
+            <div class="container postagens_home">
+            {% for o in video%}
+                <div class="row">
+            <div class="col s12 m12 l5 video">
+            <!--<img class="videomax" src="{% static 'images/video.jpg' %}">-->
+
+                <iframe width="420" height="315" src="{{o.url}}"></iframe>
+
+            </div>
+            <div class="col s12 m12 l7 ">
+                <div class="comentario max">
+                <p>Videos</p>
+                <p>{{o.name}}</p>
+                <p>{{o.created_at}}</p>
+                <p>{{o.desc}}</p>
+            </div>    
+            </div>
+              
+            </div>
+                {% endfor %}
+            </div>    
+        </div>
+        
+        <div class="footer">
+        
+        <img class="cel_footer" src="{% static 'images/cel_topo.png' %}">
+        <img class="logo_footer" src="{% static 'images/logo_rodape.png' %}">
+            <div class="txt_footer">
+                <p>Simples, prático</p>
+                <p>e pensado para ajudar</p>
+                <p>você com apenas um toque.</p>
+                <p>Copyright © 2015 Swift Mercado da Carne.</p>
+            </div>    
+        <img class="google_play" src="{% static 'images/google_play.png' %}">
+        <img class="itunes" src="{% static 'images/itunes.png' %}">
+            
+            
+        <h1 class="txt_responsivo_footer">DISPONÍVEL COMO SWIFT MERCADO DA CARNE EM:</h1>
+            
+        <img class="btn_footer_g" src="{% static 'images/bt-google-footer.png' %}">
+        <img class="btn_footer_i" src="{% static 'images/bt-loja-apple.png' %}">
+        </div>
+
+    </body>
+    <script>
+    $('.bxslider').bxSlider({
+  minSlides: 1,
+  maxSlides: 3,
+  slideWidth: 320,
+  slideMargin: 10
+});
+    
+    </script>
+    
+</html>
